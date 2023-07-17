@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elavarasi</title>
+    <link rel="stylesheet" href="mesg.css">
+    
+</head>
+<body><center>
+   
+    <div class="container">
+        <div class="title"> 
+            <img src="tom-removebg-preview.png" alt="" srcset="">
+        <h3>Text Here</h3></div>
+    <div class="top">
+        
+       
+   <p><input type="text" style="font-size:12px;" id="inputmsg" placeholder="Drop Your Msg"></p>
+</div>
+<div class="button"></div>
+<p>
+<button id="click" onclick="message()"><b>submit</b></button><br>
+<button id="click" onclick="message()"><b>reset</b></button>
+</p>
+
+<p id="outputmsg" style=" font-size:30px; text-align: center;text-shadow: 3px 7px 7px  rgb(128, 128, 128,9px);"></p>
+</div>
+</div>
+</div>
+</center>
+
+</center>
+<script>
+    const msginput=document.getElementById("inputmsg");
+function message(){
+    document.getElementById("outputmsg").innerHTML=msginput.value;
+    msginput.value="";
+}
+</script>
+    
+</body>
+</html>
